@@ -1,0 +1,17 @@
+{
+  "empresa": "Nexora Tecnologia",
+  "faq_ti": [
+    {
+      "pergunta": "Como solicitar acesso a um sistema interno?",
+      "resposta": "Abra um chamado no portal de TI, informe o nome do sistema e anexe a aprovação do seu gestor. O prazo padrão de atendimento é de até 2 dias úteis."
+    },
+    {
+      "pergunta": "O que fazer ao esquecer a senha corporativa?",
+      "resposta": "Utilize a opção de redefinição de senha no portal de identidade corporativa. Caso não consiga concluir o processo, abra um chamado para a equipe de Service Desk."
+    },
+    {
+      "pergunta": "Posso instalar programas no computador corporativo?",
+      "resposta": "Somente softwares homologados pela área de TI podem ser instalados. Solicitações de novos programas devem ser justificadas em chamado e aprovadas pela equipe responsável."
+    }
+  ]
+}
