@@ -35,9 +35,14 @@ def answer_with_oci(question: str, context: str) -> str:
         project=os.environ["OCI_GENAI_PROJECT_OCID"],
     )
 
+    prompt = (
+        f"{SYSTEM_PROMPT}\n\n"
+        f"CONTEXTO DOCUMENTAL:\n{context}\n\n"
+        f"PERGUNTA DO COLABORADOR:\n{question}"
+    )
+
     response = client.responses.create(
         model=os.environ["OCI_GENAI_MODEL"],
-        instructions=SYSTEM_PROMPT,
-        input=f"CONTEXTO DOCUMENTAL:\n{context}\n\nPERGUNTA DO COLABORADOR:\n{question}",
+        input=prompt,
     )
     return response.output_text
